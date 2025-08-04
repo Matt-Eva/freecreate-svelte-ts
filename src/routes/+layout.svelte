@@ -9,7 +9,9 @@
 	<Header />
 	<div class="main">
 		<Sidebar />
-		{@render children()}
+		<div>
+			{@render children()}
+		</div>
 	</div>
 </div>
 
@@ -34,6 +36,7 @@
 			height: 100%;
 			display: grid;
 			grid-template-columns: 200px calc(100% - 200px);
+			grid-template-rows: 100%;
 		}
 	}
 </style>
