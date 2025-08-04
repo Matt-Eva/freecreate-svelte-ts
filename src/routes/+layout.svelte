@@ -1,12 +1,16 @@
 <script lang="ts">
 	import '../globals.css';
 	import Header from '../components/+header.svelte';
+	import Sidebar from '../components/+sidebar.svelte';
 	let { children } = $props();
 </script>
 
 <div class="layout">
 	<Header />
-	{@render children()}
+	<div class="main">
+		<Sidebar />
+		{@render children()}
+	</div>
 </div>
 
 <style>
@@ -18,5 +22,18 @@
 		display: grid;
 		grid-template-rows: 40px calc(100% - 80px) 40px;
 		grid-template-columns: 100%;
+	}
+
+	@media (min-width: 480px) {
+		.layout {
+			grid-template-rows: 40px calc(100% - 40px);
+		}
+
+		.main {
+			width: 100%;
+			height: 100%;
+			display: grid;
+			grid-template-columns: 200px calc(100% - 200px);
+		}
 	}
 </style>
