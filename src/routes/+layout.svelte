@@ -19,7 +19,7 @@
 	.layout {
 		height: 100%;
 		width: 100%;
-		max-width: 1200px;
+		/* max-width: 1200px; */
 		justify-self: center;
 		display: grid;
 		grid-template-rows: 40px calc(100% - 80px) 40px;

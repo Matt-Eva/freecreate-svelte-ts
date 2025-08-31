@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { json } from '@sveltejs/kit';
-
 	const { data } = $props();
 	async function sendEmail() {
 		const apiBase = data.apiBase;

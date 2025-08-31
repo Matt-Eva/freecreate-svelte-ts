@@ -15,6 +15,7 @@
 		<a href="/app" class="link">App</a>
 		<button class="fullscreen" on:click={renderFullscreen}>Fullscreen</button>
 		<a href="/profile" class="profile">profile</a>
+		<a href="/login">login</a>
 	</nav>
 </header>
 
